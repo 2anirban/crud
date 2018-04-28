@@ -1,0 +1,14 @@
+<html>
+<head>
+    <h1>Please confirm you want to delete {{ client.name }} </h1>
+
+</head>
+ <body>
+
+ <form method="POST">
+     {% csrf_token %}
+
+ <button type="submit">Delete</button>
+ </form>
+ </body>
+</html>

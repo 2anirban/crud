@@ -1,0 +1,14 @@
+<html>
+<head>
+    <h1>Please fill up these info </h1>
+
+</head>
+ <body>
+
+ <form method="POST">
+     {% csrf_token %}
+     {{ form }}
+ <button type="submit">Save</button>
+ </form>
+ </body>
+</html>

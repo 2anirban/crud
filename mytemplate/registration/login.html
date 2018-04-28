@@ -1,0 +1,15 @@
+<html>
+<header>This is my login page</header>
+<body>
+
+<form method="POST">
+    {% csrf_token %}
+
+    {{ form }}
+    <button type="submit">login</button>
+</form>
+</body>
+
+
+
+</html>

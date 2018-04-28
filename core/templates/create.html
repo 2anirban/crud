@@ -1,0 +1,21 @@
+<html>
+<head>
+    <h1>This is the create file</h1>
+</head>
+<body>
+    {% for client in clients %}
+    <a href="{% url 'login'  %}">login</a>
+    <a href="{% url 'logout'  %}">logout</a>
+<ul>
+    <li>{{ client.name }} {{ client.last_name }}</li>
+    <a href="{% url 'client_update' client.id %}">Edit</a>
+    <a href="{% url 'client_delete' client.id %}">Delete</a>
+
+
+</ul>
+{% endfor %}
+
+</body>
+
+
+</html>
